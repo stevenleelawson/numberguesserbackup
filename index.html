@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Steven's Incredible Number Guesser</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="mainTitle"><span class="magNum">Number</span><span class="guesser"> Guesser</h1>
+    </header>
+      <form id="form">
+        <label for="main-input"></label>
+        <input type="text" id="main-input" placeholder="Guess a number">
+        <div class="guessClear">
+          <button id="guess-button">Guess</button>
+          <button id="clear-button"disabled>Clear</button>
+        </div>
+      </form>
+      <h3 class="last-guess">Your Last Guess was:</h3>
+
+  <section id="info">
+    <p class="display-number">?</p>
+    <h3 class="high-low">Please enter a number</h3>
+  </section>
+  <form class ="min-max-section">
+    <h3>Set a new range for your guesses:</h3>
+    <label for="min-num">Min number</label>
+    <input type="number" id="min-num" value="0">
+
+    <label for="max-num">Max number</label>
+    <input type="number" id="max-num" value="100">
+    <button type="submit" id="range-button">Submit</button>
+  </form>
+
+  <button id="reset-button" disabled>Reset</button>
+  <script src="app.js"></script>
+  </body>
+</html>
